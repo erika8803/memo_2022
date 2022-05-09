@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    height: 1000vh;
+  }
+  
+  header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: fixed;
+    position: static;
+    background-color: pink;
+  }
+  
+  #box {
+    padding-top: 50px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+  }
+  
+
+
+// グリッド
+.container {
+    display: grid;
+    // 書くグリッドアイテムの幅を指定する fr fraction 親要素からみた子要素の大きさを比率割合で指定できる
+    grid-template-columns: repeat(3, 1fr); 
+    // グリットアイテムの高さ repeat グリットアイテムを繰り返す
+    grid-template-rows: repeat(2, 200px);
+    gap: 10px; //グリッドアイテム同士の余白
+}
+.item {
+    background: skyblue;
+    color: #fff;
+    padding: 10px;
+}
+
